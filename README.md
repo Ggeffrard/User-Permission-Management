@@ -168,6 +168,10 @@ chmod g-x drafts
 
 <img width="833" height="202" alt="Screenshot 2026-06-09 130812" src="https://github.com/user-attachments/assets/b6992388-4947-4396-9765-88e6ccb55da2" />
 
+Purpose: 
+
+This task was to review and modify directory permissions to ensure that only authorized users could access sensitive directories and their contents. By removing unnecessary group permissions, access controls were strengthened and the risk of unauthorized access was reduced.
+
 ## Findings
 
 - Identified files with excessive permissions.
