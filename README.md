@@ -68,12 +68,49 @@ Purpose:
 - Review permissions and ownership of hidden resources.
 - Identify files that may require security review or permission changes.
 
+# Change File Permissions
 
+In this task, I reviewed file permissions to identify any files with improper access settings. After locating files that granted unnecessary write permissions, I updated the permissions to restrict unauthorized access and improve overall system security.
 
+Step 1: Identify Insecure File Permissions
 
+Reviewed the permissions of files within the projects directory to determine whether any files granted unauthorized write access to other users.
 
+The command to complete this step:
 
+ls -l
 
+<img width="852" height="268" alt="Screenshot 2026-06-09 105122" src="https://github.com/user-attachments/assets/4556bdfe-6adc-4762-9c3c-b980f95e2d34" />
+
+Step 2: Remove Unauthorized Write Access
+
+Modified the permissions of the identified file to remove write access for other users and reduce the risk of unauthorized changes.
+
+The command to complete this step:
+
+chmod o-w project_k.txt
+
+<img width="891" height="268" alt="Screenshot 2026-06-09 123353" src="https://github.com/user-attachments/assets/00ddb1d0-62b6-4def-b027-d7088e1570a0" />
+
+Step 3: Review Restricted File Permissions
+
+Inspected the permissions assigned to a restricted file to verify whether group members had unnecessary read or write privileges.
+
+The command to complete this step:
+
+ls -l
+
+<img width="827" height="273" alt="Screenshot 2026-06-09 123424" src="https://github.com/user-attachments/assets/9ae6cfe4-de96-42fd-8453-d3d695962dbf" />
+
+Step 4: Restrict Group Access
+
+Updated the file’s permissions to remove group read and write access, ensuring that only the file owner retained access to the sensitive file.
+
+The command to complete this step:
+
+chmod g-r project_m.txt
+
+<img width="873" height="173" alt="Screenshot 2026-06-09 105441" src="https://github.com/user-attachments/assets/0a1567b6-9a92-4b9b-a4ae-7656cf61c573" />
 
 
 ## Findings
