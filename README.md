@@ -44,19 +44,29 @@ Step 2: Review Directory Contents and Permissions
 
 I listed the contents of the directory and examined the associated permissions for each file and folder. This provided visibility into current access rights before making any modifications.
 
-
-
 Command Used: 
 
 ls -l
 
 <img width="945" height="362" alt="Screenshot 2026-06-09 104850" src="https://github.com/user-attachments/assets/aeb946c6-39bd-41d5-bd16-e7d644d00254" />
 
+Step 3: Identfy Hidden Files
+
+I inspected the project directory for hidden files by displaying all files and folders, including those that are normally concealed from standard directory listings. This helped ensure no important configuration or project files were overlooked during the permission review process.
+
+Command Used: 
+
+ls -la
+
+<img width="817" height="322" alt="Screenshot 2026-06-09 104951" src="https://github.com/user-attachments/assets/86e99ba4-4200-4132-82fe-ea7fbaa7589c" />
+
+
+
 Purpose:
 
-- View files and directories within the project folder.
-- Examine ownership and permission settings.
-- Identify files that may require permission adjustments.
+- Display all files, including hidden files.
+- Review permissions and ownership of hidden resources.
+- Identify files that may require security review or permission changes.
 
 
 
