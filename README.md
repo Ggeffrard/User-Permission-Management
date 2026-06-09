@@ -112,6 +112,39 @@ chmod g-r project_m.txt
 
 <img width="873" height="173" alt="Screenshot 2026-06-09 105441" src="https://github.com/user-attachments/assets/0a1567b6-9a92-4b9b-a4ae-7656cf61c573" />
 
+Purpose:
+To identify and correct improper file permissions in a Linux environment, ensuring that only authorized users have access to sensitive files and directories.
+
+# Change file permissions on a hidden file
+
+This task involved examining a hidden file for improper permissions and updating its access controls to ensure only authorized users could access the file.
+
+Step 1: Review Hidden File Permissions
+
+Listed all files, including hidden files, and examined the permissions assigned to the hidden file .project_x.txt to identify excessive write access.
+
+The command to complete this step:
+
+ls -la
+
+<img width="827" height="237" alt="Screenshot 2026-06-09 105528" src="https://github.com/user-attachments/assets/1952ce4b-5208-4de5-bd7b-d88b6521fd70" />
+
+
+Step 2: Restrict Unauthorized Write Access
+
+Modified the permissions of .project_x.txt by removing unnecessary write privileges while maintaining the required read access for authorized users.
+
+The command to complete this step:
+
+chmod u-w,g-w,g+r .project_x.txt
+
+<img width="815" height="251" alt="Screenshot 2026-06-09 105754" src="https://github.com/user-attachments/assets/f061dc7a-cd3d-4970-807f-80d1f9ee1788" />
+
+Purpose: 
+
+To audit and modify hidden file permissions to ensure that only authorized users retained the appropriate level of access.
+
+
 
 ## Findings
 
