@@ -144,7 +144,29 @@ Purpose:
 
 To audit and modify hidden file permissions to ensure that only authorized users retained the appropriate level of access.
 
+# Change directory permissions
 
+In this task, I reviewed and modified directory permissions to ensure that access was restricted to authorized users only. By removing unnecessary privileges, I strengthened access controls and improved the overall security of the directory and its contents.
+
+Step 1: Review Directory Access Permissions
+
+Examined the permissions assigned to the drafts directory to determine whether group members had access to the directory and its contents.
+
+The command to complete this step:
+
+ls -l 
+
+<img width="852" height="152" alt="Screenshot 2026-06-09 130728" src="https://github.com/user-attachments/assets/d3cb59c8-b6e5-4cde-a2ac-7a78684a5fcd" />
+
+Step 2: Restrict Group Access
+
+Removed the group’s execute permission from the drafts directory to ensure that only the authorized user could access the directory and its files.
+
+The command to complete this step:
+
+chmod g-x drafts
+
+<img width="833" height="202" alt="Screenshot 2026-06-09 130812" src="https://github.com/user-attachments/assets/b6992388-4947-4396-9765-88e6ccb55da2" />
 
 ## Findings
 
